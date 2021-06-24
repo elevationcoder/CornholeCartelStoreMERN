@@ -1,0 +1,72 @@
+.CartScreen {
+    display: flex;
+    max-width: 2300px;
+    margin-top: 2rem auto;
+}
+
+.CartScreen h2 {
+    margin-bottom: 1rem;
+}
+
+.CartScreenLeft {
+    flex: 0.7;
+    margin-right: 1rem;
+    background: transparent;
+    padding: 1rem;
+}
+
+.CartScreenRight {
+    flex: 0.3;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    height: fit-content;
+    margin: 26px;
+}
+
+.CartScreenRight div {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.CartScreenRight div:last-child {
+    border: none;
+}
+
+.CartScreenInfo p {
+    padding: 8px;
+}
+
+.CartScreenRight div button {
+    padding: 10px 17px;
+    width: 100%;
+    background: #171717;
+    color: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+}
+
+
+.CartScreenRight div button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 1320px) {
+    .CartScreen {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 960px) {
+    .CartScreen {
+        max-width: 800px;
+        flex-direction: column;
+    }
+
+    .CartScreenLeft {
+        margin: 0;
+    }
+
+    .CartScreenRight {
+        margin: 1rem;
+    }
+}

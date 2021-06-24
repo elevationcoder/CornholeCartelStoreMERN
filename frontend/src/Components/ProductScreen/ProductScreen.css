@@ -1,0 +1,99 @@
+.ProductScreen {
+    max-width: 1300px;
+    margin: 1rem auto;
+    display: flex;
+}
+
+.ProductScreenLeft {
+    display: flex;
+    flex: 0.8;
+}
+
+.LeftImage {
+    margin: 1rem;
+    flex: 0.6;
+}
+
+.LeftInfo {
+    margin: 1rem;
+    flex: 0.4;
+    background: #fff;
+    height: fit-content;
+    font-size: 0.9rem;
+}
+
+.LeftName {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.LeftInfo>p,
+.RightInfo>p {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.LeftInfo>p:last-child,
+.RightInfo>p:last-child {
+    border: none;
+}
+
+.ProductScreenRight {
+    flex: 0.2;
+}
+
+.RightInfo {
+    width: 250px;
+    margin: 1rem;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.RightInfo>p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.RightInfo>p>button {
+    grid-column: 1/-1;
+    padding: 10px 16px;
+    background: #171717;
+    color: #f4f4f4;
+    border: 1px solid #171717;
+    cursor: pointer;
+}
+
+.RightInfo select {
+    padding: 10px 16px;
+}
+
+@media (max-width: 960px) {
+    .ProductScreen {
+        flex-direction: column;
+    }
+
+    .ProductScreenLeft {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .LeftImage {
+        flex: 1;
+    }
+
+    .LeftInfo {
+        flex: 1;
+    }
+
+    .ProductScreenRight {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .RightInfo {
+        width: 100%;
+        margin: 0;
+    }
+}
